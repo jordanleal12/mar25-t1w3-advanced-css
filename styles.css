@@ -9,6 +9,10 @@
 	background-color: paleturquoise;
 }
 
+body {
+    overflow: hidden;
+}
+
 .bubble {
 	width: 10dvw;
 	/* aspect-ratio: 1; */
@@ -16,9 +20,28 @@
 	background-color: blue;
 	transition: background-color 1s, transform 1s;
 	border-radius: 50%;
+    animation: animationName 5s infinite linear;
+    position: absolute;
 }
 
 .bubble:hover {
 	background-color: steelblue;
 	transform: scale(2);
+}
+
+.bubble:nth-child(2) {
+    animation: animationName 10s infinite linear;
+}
+
+@keyframes animationName {
+	0% {
+		bottom: -1000px;
+		transform: translateY(0);
+	}
+	
+	100% {
+		bottom: 1000px;
+		transform: translateY(-1000px);
+	}
+
 }
