@@ -1,0 +1,17 @@
+@use "_bubbles.scss";
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.bubbles {
+	width: 100dvw;
+	height: 100dvh;
+	background-color: paleturquoise;
+}
+
+body {
+    overflow: hidden;
+}
+
